@@ -9,10 +9,6 @@ def index(request):
 
 class SampleAPIView(APIView):
     def get(self, request):
-        data = {
-            'apple': '사과',
-        }
-
         data = '민아,혜리,유라,소진'.split(',')
 
         return Response(data)
